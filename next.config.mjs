@@ -1,4 +1,12 @@
+import dotenv from "dotenv";
+
+dotenv.config();
+
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  env: {
+    NEXT_PUBLIC_TMDB_API_KEY: process.env.NEXT_PUBLIC_TMDB_API_KEY,
+  },
+};
 
 export default nextConfig;
