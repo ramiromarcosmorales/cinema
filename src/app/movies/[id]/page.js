@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
 import Header from "../../components/Header";
+import Footer from "@/app/components/Footer";
 
 export default function MovieDetails() {
   const [movie, setMovie] = useState(null);
@@ -157,6 +158,7 @@ export default function MovieDetails() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }
